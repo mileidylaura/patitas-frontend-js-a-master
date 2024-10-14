@@ -70,7 +70,7 @@ window.addEventListener("load", function () {
         throw new Error('Error: ${response.statusText}');
       }
   
-      //window.location.replace("indice.html");
+      window.location.replace("indice.html");
   
     } catch (error) {
       console.error('Error: Ocurrió un problema al cerrar Sesión. ', error);
