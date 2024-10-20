@@ -42,9 +42,11 @@ function ocultarAlerta() {
     msgError.style.display = 'none';
 }
 
+
+// Consumo de API
 async function autenticar(){
     
-    const url = 'http://localhost:8082/login/autenticar-async';
+    const url = 'http://localhost:8082/login/sign_out_sync';
     const data = {
         tipoDocumento: tipoDocumento.value,
         numeroDocumento: numeroDocumento.value,
