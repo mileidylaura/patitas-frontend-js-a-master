@@ -47,10 +47,15 @@ window.addEventListener("load", function () {
     const time = `${dia}/${mes}/${year} - ${hora}:${min}:${sec}`
 
     // Consumiento Api
-  
+
     
+    const url = "http://localhost:8082/login/out-async";
+    const data = {
+      tipoDocumento: tipoDoc ,
+      numeroDocumento: numDoc ,
+      fechaCierre:  time
     };
-  
+
     try {
       const response = await fetch(url, {
         method: "POST",
@@ -74,4 +79,4 @@ window.addEventListener("load", function () {
       console.error('Error: Ocurrió un problema al cerrar Sesión. ', error);
       mostrarAlerta('Error: Ocurrió un problema al cerrar Sesión.');
     }
-  
+  }

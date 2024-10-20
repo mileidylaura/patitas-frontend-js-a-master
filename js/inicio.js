@@ -46,7 +46,7 @@ function ocultarAlerta() {
 // Consumo de API
 async function autenticar(){
     
-    const url = 'http://localhost:8082/login/sign_out_sync';
+    const url = 'http://localhost:8082/login/autenticar-async';
     const data = {
         tipoDocumento: tipoDocumento.value,
         numeroDocumento: numeroDocumento.value,
