@@ -46,7 +46,7 @@ window.addEventListener("load", function () {
     var sec = hoy.getSeconds();
     const time = `${dia}/${mes}/${year} - ${hora}:${min}:${sec}`
 
-    const url = "http://localhost:8082/login/out-async";
+    const url = "http://localhost:8082/login/sign_out_sync";
     const data = {
       tipoDocumento: tipoDoc ,
       numeroDocumento: numDoc ,
